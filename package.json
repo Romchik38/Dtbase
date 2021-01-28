@@ -1,0 +1,20 @@
+{
+  "name": "dtbase",
+  "version": "1.0.0",
+  "description": "Dtbase gets an array of objects, do something with them and return result.",
+  "main": "dtbase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "manage",
+    "json",
+    "array",
+    "select",
+    "objects",
+    "simple",
+    "database"
+  ],
+  "author": "Romchik38",
+  "license": "ISC"
+}
