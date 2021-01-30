@@ -1,41 +1,39 @@
 Dtbase gets an array of objects, do something with them and return result.
 
-##Call:
+## Call:
   * dtbase({ methodName, fn, source, options })
 
-##Arguments
+## Arguments
   1. methodName - name of the method (string).   
-  2. fn - a function that will compare an object with a con
+  2. fn - a function that will compare an object with a condition
   3. source - array of objects(array)  
   4. options - some options for methods(object)  
 
-##Methods:
+## Methods:
   1. select - compare with a condition and return selection of items
 
-###Result
+### Result
   * All methods return an array of objects. [object, object2 ...]
 
-##Fn
+## Fn
   * async function
   * arguments:
-    1. item - object from array
+    1. item - object
   * return:  
-    1. object -if it meets the conditions
+    1. object -if it meets a conditions
     2. null - if not.  
 
-##Source
-  * an array
-  * objects inside
+## Source
+  * an array of objects
 
-##Options    
+## Options    
   * some options for methods  
 
 
 Expamle
 
-
 ```javascript
-const dtbase = require('./dtbase.js');
+const dtbase = require('@romchik38/dtbase');
 
 const age = async item => {
   try {

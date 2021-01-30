@@ -1,5 +1,5 @@
 {
-  "name": "dtbase",
+  "name": "@romchik38/dtbase",
   "version": "1.0.0",
   "description": "Dtbase gets an array of objects, do something with them and return result.",
   "main": "dtbase.js",
@@ -16,5 +16,13 @@
     "database"
   ],
   "author": "Romchik38",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romchik38/Dtbase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Romchik38/Dtbase/issues"
+  },
+  "homepage": "https://github.com/Romchik38/Dtbase#readme"
 }
