@@ -34,6 +34,8 @@ Expamle
 
 ```javascript
 const dtbase = require('@romchik38/dtbase');
+//@romchik38/dtbase@2.0.0
+
 
 const age = async item => {
   try {

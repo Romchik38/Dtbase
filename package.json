@@ -1,8 +1,8 @@
 {
   "name": "@romchik38/dtbase",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Dtbase gets an array of objects, do something with them and return result.",
-  "main": "dtbase.js",
+  "main": "dtqueue.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
