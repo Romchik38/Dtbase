@@ -6,7 +6,7 @@ const path = require('path');
 const DIR_PATH = __dirname;
 const delExt = fileName => path.parse(fileName)['name'];
 const libs = Object.create(null);
-const dirs = ['methods'];
+const dirs = ['dtmethods'];
 
 for (const dir of dirs) {
   libs[dir] = Object.create(null);

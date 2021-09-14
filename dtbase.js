@@ -1,11 +1,11 @@
 'use strict';
 
-const libs = require('./libs.js');
+const libs = require('./dtlibs.js');
 
 const dtbase = async obj => {
   try {
     const { methodName, fn, source, options } = obj;
-    const method = libs.methods[methodName];
+    const method = libs.dtmethods[methodName];
     return await method(fn, source, options);
   } catch (err) {
     throw new Error(err);
