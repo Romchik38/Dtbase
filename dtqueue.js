@@ -23,6 +23,7 @@ const methodSerializer = {
   select: data => Promise.resolve(data),
   update: updateInsert,
   insert: updateInsert,
+  delete: updateInsert
 };
 
 const job = async (element, callback) => {

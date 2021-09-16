@@ -7,7 +7,7 @@ const dtqueue = require('./dtqueue.js');
 const fn = function (item) {
   return item;
 };
-//Use this to insert with condirion - Name must be unique
+//Use this to insert with condition - Name must be unique
 //If not, you will get an error
 const fnWithCond = function (item) {
   if (this.name !== item.name) return item;
