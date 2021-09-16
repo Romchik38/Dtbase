@@ -3,7 +3,7 @@
 const update = async (fn, arr, options) => {
   try {
     const obj = options.update;
-    if (!obj) throw new Error('не передан объект для update');
+    if (!obj) throw new Error('Any object have not been passed to options.update');
     const bindedFn = fn.bind(obj);
     const res = [];
     for (const item of arr) {
@@ -11,7 +11,7 @@ const update = async (fn, arr, options) => {
       if (value) {
         res.push(value);
       } else {
-        throw new Error('Ошибка при update элемента: ', item);
+        throw new Error('Error while update item: ', item);
       }
     }
     return res;

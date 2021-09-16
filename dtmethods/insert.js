@@ -3,7 +3,7 @@
 const insert = async (fn, arr, options) => {
   try {
     const obj = options.insert;
-    if (!obj) throw new Error('не передан объект для insert');
+    if (!obj) throw new Error('Any object have not been passed to options.insert');
     const bindedFn = fn.bind(obj);
     const res = [];
     for (const item of arr) {
@@ -11,7 +11,7 @@ const insert = async (fn, arr, options) => {
       if (value) {
         res.push(value);
       } else {
-        throw new Error(`Ошибка при insert элемента: ${item}. duplicate`);
+        throw new Error(`Error insert item: ${item} is a duplicate`);
       }
     }
     res.push(obj);

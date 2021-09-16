@@ -1,9 +1,10 @@
 'use strict';
 
 const dtbase = require('./dtbase.js');
-const readFile = require('./dtreadfile.js');
-const writeFile = require('./dtwritefile.js');
-const Queue = require('./concurrentQueueThenable.js')
+const { libs } = require('./dtlibs.js');
+const readFile = libs.dtreadfile;
+const writeFile = libs.dtwritefile;
+const Queue = libs.concurrentQueueThenable;
 
 const dtPath = __dirname.concat('/database/');
 

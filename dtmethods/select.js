@@ -3,7 +3,7 @@
 const select = async (fn, arr, options) => {
   try {
     const obj = options.select;
-    if (!obj) throw new Error('не передан объект для select');
+    if (!obj) throw new Error('Any object have not been passed to options.select');
     const bindedFn = fn.bind(obj);
     const res = [];
     for (const item of arr) {
